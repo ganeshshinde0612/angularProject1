@@ -1,0 +1,12 @@
+<div class="container">
+    
+    <form [formGroup]="attachFile"  (ngSubmit)="onsubmit()">
+        
+        <h2 class="text-success">Sent email fileattach</h2>
+        <input type="email" class="form-control w-25" formControlName="toemail" placeholder="enter to email"><br>
+        <input type="test" class="form-control w-25" formControlName="msg" placeholder="enter message"><br>
+        <input type="text" class="form-control w-25" formControlName="subject" placeholder="enter subject"><br>
+        <input type="file" class="form-control w-25"  placeholder="select file" (change)="onPhotoSelect($event)"><br>
+        <button class="btn btn-primary">submit</button>
+      </form>
+</div>
